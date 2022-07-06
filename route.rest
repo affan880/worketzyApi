@@ -1,0 +1,16 @@
+GET http://localhost:3000/api/users/
+
+###
+POST http://localhost:3000/api/users/
+Content-Type: application/json
+
+{
+  "_id": "62a9cd80d18cb4ccbf5f6ddd686",
+  "userUniqueId": "11",
+  "userImage": "wwww.nice.com",
+  "userFirstName": "efwefw",
+  "userLastName": "gcgv",
+  "userEmail": "huhu",
+  "userBio": "gugubi",
+  "userPhone": "iuuibuon"
+}
