@@ -1,4 +1,4 @@
-GET http://localhost:3000/api/jobs/recruiter/1
+GET http://localhost:3000/api/jobs/
 
 ###
 POST http://localhost:3000/api/jobs/
@@ -6,10 +6,11 @@ Content-Type: application/json
 
 {
      "recruiterId": "2",
-      "jobsUniqueId": "3",
+      "jobsUniqueId": "4",
+      "jobTitle": "a",
       "jobInfo": { 
       "image": "4dddddd654555",
-      "jobTitle": "req.body.jobInfo.jobTitle",
+      "jobTitle": "a",
       "jobType": "req.body.jobType",
       "jobDescription": "req.body.jobDescription",
       "requiredSkills": "req.body.requiredSkills",
