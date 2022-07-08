@@ -5,11 +5,11 @@ POST http://localhost:3000/api/jobs/
 Content-Type: application/json
 
 {
-     "recruiterId": "88918488",
-      "jobsUniqueId": "56544441556151",
+     "recruiterId": "1",
+      "jobsUniqueId": "1",
       "jobs":{
       "jobInfo": { 
-      "image": "4654555",
+      "image": "4dddddd654555",
       "jobTitle": "req.body.jobInfo.jobTitle",
       "jobType": "req.body.jobType",
       "jobDescription": "req.body.jobDescription",
