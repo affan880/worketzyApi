@@ -36,6 +36,7 @@ const jobOpeningsSchema = new mongoose.Schema({
   },
   {
     timestamps: true,
+    timeseries : true
   }
 );
 
