@@ -29,7 +29,7 @@ router.post('/', async (req, res) => {
 // get by id
 router.get('/:id', getJobTitle, (req, res) => { 
     try {
-        res.send(res.list.title);
+        res.send(res.list);
     }
     catch (err) { 
         res.status(500).json({ message: err.message });

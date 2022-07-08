@@ -1,16 +1,21 @@
-GET http://localhost:3000/api/users/
+GET http://localhost:3000/api/jobs/
 
 ###
-POST http://localhost:3000/api/users/
+POST http://localhost:3000/api/jobs/
 Content-Type: application/json
 
 {
-  "_id": "62a9cd80d18cb4ccbf5f6ddd686",
-  "userUniqueId": "11",
-  "userImage": "wwww.nice.com",
-  "userFirstName": "efwefw",
-  "userLastName": "gcgv",
-  "userEmail": "huhu",
-  "userBio": "gugubi",
-  "userPhone": "iuuibuon"
+     "recruiterId": "88918488",
+      "jobsUniqueId": "56544441556151",
+      "jobs":{
+      "jobInfo": { 
+      "image": "4654555",
+      "jobTitle": "req.body.jobInfo.jobTitle",
+      "jobType": "req.body.jobType",
+      "jobDescription": "req.body.jobDescription",
+      "requiredSkills": "req.body.requiredSkills",
+      "jobRequirements": "req.body.jobRequirements",
+      "jobLocation": "req.body.jobLocation"
+    }
+  }
 }

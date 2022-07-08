@@ -13,8 +13,10 @@ db.once("open", () => {
 app.use(express.json());
 const jobSeekerRouter = require("./routes/jobSeekersDetails");
 const jobListRouter = require("./routes/jobListTypes");
+const jobs = require("./routes/jobs");
 app.use("/api/jobList", jobListRouter);
 app.use("/api/users", jobSeekerRouter);
+app.use("/api/jobs", jobs);
 
 app.listen(process.env.PORT || 3000, () => {
   console.log("Server Started");
