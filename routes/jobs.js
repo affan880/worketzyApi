@@ -15,7 +15,6 @@ router.post("/", async (req, res) => {
   const jobs = new Jobs({
     recruiterId: req.body.recruiterId,
     jobsUniqueId: req.body.jobsUniqueId,
-    jobs: {
       jobInfo: {
         image: req.body.jobInfo.image,
         jobTitle: req.body.jobInfo.jobTitle,
@@ -25,7 +24,6 @@ router.post("/", async (req, res) => {
         jobRequirements: req.body.jobInfo.jobRequirements,
         jobLocation: req.body.jobInfo.jobLocation,
       },
-    },
   });
   try {
     const newJob = await jobs.save();
@@ -44,7 +42,7 @@ router.get("/recruiter/:jobsUniqueId", getJobsInfo, (req, res) => {
 });
 router.get("/:recruiterId", getRecruiterJobs, (req, res) => {
   try {
-    res.send(res.jobs.jobInfo);
+    res.send(res.jobs);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
