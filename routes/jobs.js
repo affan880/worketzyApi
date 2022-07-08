@@ -15,6 +15,7 @@ router.post("/", async (req, res) => {
   const jobs = new Jobs({
     recruiterId: req.body.recruiterId,
     jobsUniqueId: req.body.jobsUniqueId,
+    jobTitle: req.body.jobTitle,
       jobInfo: {
         image: req.body.jobInfo.image,
         jobTitle: req.body.jobInfo.jobTitle,
@@ -33,7 +34,21 @@ router.post("/", async (req, res) => {
   }
 });
 // get by id
-router.get("/recruiter/:jobsUniqueId", getJobsInfo, (req, res) => {
+router.get("/recruiter/:recruiterId/:jobsUniqueId", getJobsInfo, (req, res) => {
+  try {
+    res.send(res.jobs);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+router.get("/:recruiterId", getRecruiterJobs, (req, res) => {
+  try {
+    res.send(res.jobs);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+router.get("/jobTitle/:jobTitle", getJobsByTitle, (req, res) => {
   try {
     res.send(res.jobs);
   } catch (err) {
@@ -51,7 +66,7 @@ router.get("/:recruiterId", getRecruiterJobs, (req, res) => {
 async function getJobsInfo(req, res, next) {
   let jobs;
   try {
-    jobs = await Jobs.find({jobsUniqueId:req.params.jobsUniqueId});
+    jobs = await Jobs.find({recruiterId:req.params.recruiterId,jobsUniqueId:req.params.jobsUniqueId});
     if (jobs == null) {
       return res.status(404).json({ message: "Cannot find list" });
     }
@@ -65,6 +80,20 @@ async function getRecruiterJobs(req, res, next) {
   let jobs;
   try {
     jobs = await Jobs.find({recruiterId:req.params.recruiterId});
+    if (jobs == null) {
+      return res.status(404).json({ message: "Cannot find list" });
+    }
+  } catch (err) {
+    return res.status(500).json({ message: err.message });
+  }
+  res.jobs = jobs;
+  next();
+}
+async function getJobsByTitle(req, res, next) {
+  let jobs;
+  try {
+    jobs = await Jobs.find({ jobTitle: req.params.jobTitle });
+    console.log(jobs);
     if (jobs == null) {
       return res.status(404).json({ message: "Cannot find list" });
     }
