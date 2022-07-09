@@ -1,4 +1,4 @@
-GET http://localhost:3000/api/jobs/5
+GET http://localhost:3000/api/jobs/
 
 ###
 POST http://localhost:3000/api/jobs/
@@ -19,7 +19,7 @@ Content-Type: application/json
     }
 }
 ###
-DELETE http://localhost:3000/api/jobs/delete/5/5
+DELETE https://worketzy.herokuapp.com/api/jobs/delete/kOXkSev7zEMZfz4bLtyzjNOonzs1/632816432
 
 
 ###
