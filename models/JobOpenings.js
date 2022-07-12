@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
+var uniqueValidator = require("mongoose-unique-validator");
 const jobOpeningsSchema = new mongoose.Schema(
   {
     recruiterId: {
-      type: Number,
+      type: string,
       required: true,
     },
     jobsUniqueId: {
@@ -64,5 +65,6 @@ const jobOpeningsSchema = new mongoose.Schema(
     
   }
 );
+jobOpeningsSchema.plugin(uniqueValidator);
 
 module.exports = mongoose.model('Jobs', jobOpeningsSchema);
