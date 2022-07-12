@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 const jobOpeningsSchema = new mongoose.Schema(
   {
     recruiterId: {
-      type: String,
+      type: Number,
       required: true,
     },
     jobsUniqueId: {
-      type: String,
+      type: Number,
       required: true,
       unique: true,
     },
