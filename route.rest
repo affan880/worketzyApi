@@ -1,21 +1,21 @@
-GET https://worketzy.herokuapp.com/api/jobs/12
+GET https://worketzy.herokuapp.com/api/jobs/
 
 ###
 POST http://localhost:3000/api/jobs/
 Content-Type: application/json
 
 {
-     "recruiterId": "12",
-      "jobsUniqueId": "12",
+     "recruiterId": 1,
+      "jobsUniqueId": 1,
       "jobTitle": "software",
       "jobInfo": { 
       "image": "https://.googleapis.com/v0/b/worketzy-eecf2.appspot.com/o/Reccomended%20Jobs.png?alt=media&token=72df389d-f1db-425d-a89e-38f6116d6fb4",
-      "jobTitle": "ddwdewed",
-      "jobType": "part-tidwedeme",
+      "jobTitle": "software",
+      "jobType": "part-time",
       "jobDescription": "eeeeeeeeeeleeeorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoinii",
-      "requiredSkills": "reaeeect, reaeeeeeect js",
-      "jobRequirements": "neeeeone",
-      "jobLocation": "meeeeeeumbai",
+      "requiredSkills": "react, react js",
+      "jobRequirements": "none",
+      "jobLocation": "mumbai",
       "numberofopenings": 5,
       "peopleApplied": {
         "jobSeekerID": 10,
@@ -28,8 +28,7 @@ Content-Type: application/json
         "jobSeekerID": 10,
         "jobSeekerName": "akram",
         "review": "good job"
-      },
-      "dddewe":"dqwdwdwq"
+      }
     }
 }
 ###
