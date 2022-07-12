@@ -24,6 +24,12 @@ async function updateImage(req, res, next) {
                     'jobInfo.requiredSkills': req.body.requiredSkills,
                     'jobInfo.jobRequirements': req.body.jobRequirements,
                     'jobInfo.jobLocation': req.body.jobLocation,
+                    'jobInfo.numberofopenings': req.body.numberofopenings,
+                    'jobInfo.peopleApplied': req.body.peopleApplied,
+                    'jobInfo.numberofViews': req.body.numberofViews,
+                    'jobInfo.points': req.body.points,
+                    'jobInfo.numberofPeopleRated': req.body.numberofPeopleRated,
+                    'jobInfo.reviews': req.body.reviews,
                 }
             },
         );

@@ -67,30 +67,3 @@ const jobOpeningsSchema = new mongoose.Schema(
 );
 
 module.exports = mongoose.model('Jobs', jobOpeningsSchema);
-
-{
-  /*
-  
-image: {
-      type: String,
-    },
-    jobTitle: {
-      type: String,
-    },
-    jobType: {
-      type: String,
-    },
-    jobDescription: {
-      type: String,
-    },
-    requiredSkills: {
-      type: String,
-    },
-    jobRequirements: {
-      type: String,
-    },
-    jobLocation: {
-      type: String,
-    }, 
-*/
-}
