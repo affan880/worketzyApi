@@ -3,7 +3,7 @@ var uniqueValidator = require("mongoose-unique-validator");
 const jobOpeningsSchema = new mongoose.Schema(
   {
     recruiterId: {
-      type: string,
+      type: String,
       required: true,
     },
     jobsUniqueId: {
