@@ -5,8 +5,8 @@ POST http://localhost:3000/api/jobs/
 Content-Type: application/json
 
 {
-     "recruiterId": "5",
-      "jobsUniqueId": "5",
+     "recruiterId": "12",
+      "jobsUniqueId": "12",
       "jobTitle": "software",
       "jobInfo": { 
       "image": "https://.googleapis.com/v0/b/worketzy-eecf2.appspot.com/o/Reccomended%20Jobs.png?alt=media&token=72df389d-f1db-425d-a89e-38f6116d6fb4",
@@ -15,7 +15,21 @@ Content-Type: application/json
       "jobDescription": "eeeeeeeeeeleeeorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoiniilorem70feroubofwifnewifnwincininnoinvoinii",
       "requiredSkills": "reaeeect, reaeeeeeect js",
       "jobRequirements": "neeeeone",
-      "jobLocation": "meeeeeeumbai"
+      "jobLocation": "meeeeeeumbai",
+      "numberofopenings": 5,
+      "peopleApplied": {
+        "jobSeekerID": 10,
+        "jobSeekerName": "akram"
+      },
+      "numberofViews": 12,
+      "points": 12,
+      "numberofPeopleRated": 3,
+      "reviews": {
+        "jobSeekerID": 10,
+        "jobSeekerName": "akram",
+        "review": "good job"
+      },
+      "dddewe":"dqwdwdwq"
     }
 }
 ###

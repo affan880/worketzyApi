@@ -16,15 +16,21 @@ router.post("/", async (req, res) => {
     recruiterId: req.body.recruiterId,
     jobsUniqueId: req.body.jobsUniqueId,
     jobTitle: req.body.jobTitle,
-      jobInfo: {
-        image: req.body.jobInfo.image,
-        jobTitle: req.body.jobInfo.jobTitle,
-        jobType: req.body.jobInfo.jobType,
-        jobDescription: req.body.jobInfo.jobDescription,
-        requiredSkills: req.body.jobInfo.requiredSkills,
-        jobRequirements: req.body.jobInfo.jobRequirements,
-        jobLocation: req.body.jobInfo.jobLocation,
-      },
+    jobInfo: {
+      image: req.body.jobInfo.image,
+      jobTitle: req.body.jobInfo.jobTitle,
+      jobType: req.body.jobInfo.jobType,
+      jobDescription: req.body.jobInfo.jobDescription,
+      requiredSkills: req.body.jobInfo.requiredSkills,
+      jobRequirements: req.body.jobInfo.jobRequirements,
+      jobLocation: req.body.jobInfo.jobLocation,
+      numberofopenings: req.body.jobInfo.numberofopenings,
+      peopleApplied: req.body.jobInfo.peopleApplied,
+      numberofViews: req.body.jobInfo.numberofViews,
+      points: req.body.jobInfo.points,
+      numberofPeopleRated: req.body.jobInfo.numberofPeopleRated,
+      reviews: req.body.jobInfo.reviews,
+    },
   });
   try {
     const newJob = await jobs.save();

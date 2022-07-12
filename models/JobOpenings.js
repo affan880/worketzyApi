@@ -14,6 +14,7 @@ const jobOpeningsSchema = new mongoose.Schema(
     jobTitle: {
       type: String,
     },
+
     jobInfo: {
       image: {
         type: String,
@@ -36,11 +37,32 @@ const jobOpeningsSchema = new mongoose.Schema(
       jobLocation: {
         type: String,
       },
+      numberofopenings: {
+        type: Number,
+      },
+      peopleApplied: {
+        type: Array,
+        subType: Object,
+      },
+      numberofViews: {
+        type: Number,
+      },
+      points: {
+        type: Number,
+      },
+      numberofPeopleRated: {
+        type: Number,
+      },
+      reviews: {
+        type: Array,
+        subType: Object,
+      },
     },
   },
   {
     timestamps: true,
     timeseries: true,
+    
   }
 );
 
@@ -48,6 +70,7 @@ module.exports = mongoose.model('Jobs', jobOpeningsSchema);
 
 {
   /*
+  
 image: {
       type: String,
     },
