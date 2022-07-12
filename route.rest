@@ -1,12 +1,12 @@
 GET https://worketzy.herokuapp.com/api/jobs/
 
 ###
-POST http://localhost:3000/api/jobs/
+POST https://worketzy.herokuapp.com/api/jobs
 Content-Type: application/json
 
 {
      "recruiterId": 1,
-      "jobsUniqueId": 3,
+      "jobsUniqueId": 4,
       "jobTitle": "software",
       "jobInfo": { 
       "image": "https://.googleapis.com/v0/b/worketzy-eecf2.appspot.com/o/Reccomended%20Jobs.png?alt=media&token=72df389d-f1db-425d-a89e-38f6116d6fb4",
