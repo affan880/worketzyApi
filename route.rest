@@ -6,7 +6,7 @@ Content-Type: application/json
 
 {
      "recruiterId": 1,
-      "jobsUniqueId": 2,
+      "jobsUniqueId": 3,
       "jobTitle": "software",
       "jobInfo": { 
       "image": "https://.googleapis.com/v0/b/worketzy-eecf2.appspot.com/o/Reccomended%20Jobs.png?alt=media&token=72df389d-f1db-425d-a89e-38f6116d6fb4",
@@ -20,14 +20,6 @@ Content-Type: application/json
       "peopleApplied": {
         "jobSeekerID": 10,
         "jobSeekerName": "akram"
-      },
-      "numberofViews": 12,
-      "points": 12,
-      "numberofPeopleRated": 3,
-      "reviews": {
-        "jobSeekerID": 10,
-        "jobSeekerName": "akram",
-        "review": "good job"
       }
     }
 }

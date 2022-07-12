@@ -33,8 +33,8 @@ router.post("/", async (req, res) => {
     },
   });
   try {
-    const newJob = await jobs.save();
-    res.status(201).json(newJob);
+    const job = await jobs.save();
+    res.status(201).json(job);
   } catch (err) {
     res.status(400).json({ message: err.message });
   }
