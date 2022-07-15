@@ -58,6 +58,26 @@ const jobOpeningsSchema = new mongoose.Schema(
         subType: Object,
       },
     },
+    companiesInfo: {
+      LegalName: {
+        type: String,
+      },
+      Description: {
+        type: String,
+      },
+      Location: {
+        type: String,
+      },
+      Logo: {
+        type: String,
+      },
+      Website: {
+        type: String,
+      },
+      Industry: {
+        type: String,
+      }
+    }
   },
   {
     timestamps: true,

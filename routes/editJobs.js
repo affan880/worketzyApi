@@ -30,6 +30,12 @@ async function updateImage(req, res, next) {
                     'jobInfo.points': req.body.points,
                     'jobInfo.numberofPeopleRated': req.body.numberofPeopleRated,
                     'jobInfo.reviews': req.body.reviews,
+                    'companiesInfo.LegalName': req.body.LegalName,
+                    'companiesInfo.Description': req.body.Description,
+                    'companiesInfo.Location': req.body.Location,
+                    'companiesInfo.Logo': req.body.Logo,
+                    'companiesInfo.Website': req.body.Website,
+                    'companiesInfo.Industry': req.body.Industry,
                 }
             },
         );

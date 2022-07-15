@@ -31,6 +31,14 @@ router.post("/", async (req, res) => {
       numberofPeopleRated: req.body.jobInfo.numberofPeopleRated,
       reviews: req.body.jobInfo.reviews,
     },
+    companiesInfo: {
+      LegalName: req.body.companiesInfo.LegalName,
+      Description: req.body.companiesInfo.Description,
+      Location: req.body.companiesInfo.Location,
+      Logo: req.body.companiesInfo.Logo,
+      Website: req.body.companiesInfo.Website, 
+      Industry: req.body.companiesInfo.Industry,
+    },
   });
   try {
     const job = await jobs.save();
