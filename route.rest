@@ -1,11 +1,11 @@
-GET https://worketzy.herokuapp.com/api/jobs/
+GET http://localhost:3000/api/jobs
 
 ###
-POST https://worketzy.herokuapp.com/api/jobs
+POST http://localhost:3000/api/jobs
 Content-Type: application/json
 
 {
-     "recruiterId": 1,
+      "recruiterId": "dwd",
       "jobsUniqueId": 4,
       "jobTitle": "software",
       "jobInfo": { 
@@ -17,11 +17,20 @@ Content-Type: application/json
       "jobRequirements": "none",
       "jobLocation": "mumbai",
       "numberofopenings": 5,
-      "peopleApplied": {
-        "jobSeekerID": 10,
-        "jobSeekerName": "akram"
+      "numberofViews": 10,
+      "points": 12,
+      "numberofPeopleRated":10,
+      "peopleApplied": {},
+      "reviews": {}
+      },
+      "companiesInfo":{
+        "LegalName": "google",
+        "Description": "google is a company",
+        "Location": "mumbai",
+        "Logo": "https://.googleapis.com/v0/b/worketzy-eecf2.appspot.com/o/Reccomended%20Jobs.png?alt=media&token=72df389d-f1db-425d-a89e-38f6116d6fb4",
+        "Website": "https://www.google.com",
+        "Industry": "software"
       }
-    }
 }
 ###
 DELETE https://worketzy.herokuapp.com/api/jobs/delete/kOXkSev7zEMZfz4bLtyzjNOonzs1/632816432
